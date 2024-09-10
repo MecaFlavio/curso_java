@@ -25,7 +25,7 @@ public class Main {
 		System.out.println("Voce digitou: " + y);
 		z = sc.nextDouble(); // Função para entrada de ponto flutuante
 		System.out.println(z);
-		w = sc.next().charAt(0); // função next le como string e charAt pega o caracter do paramentro
+		w = sc.next().charAt(0); // função next lê como string e charAt pega o caracter do paramentro
 		System.out.println(w);
 		c = sc.nextLine(); //Função nextLine le uma frase inteira
 		System.out.println(c);
