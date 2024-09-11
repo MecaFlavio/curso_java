@@ -3,7 +3,7 @@ package testes;
 public class Ternario {
 
 	public static void main(String[] args) {
-
+		//testes
 		int idade = 17;
 		String reposta;
 		
