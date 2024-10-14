@@ -1,6 +1,5 @@
 package aula_matrizes;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Programa {
