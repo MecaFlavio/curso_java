@@ -20,6 +20,7 @@ public class ProgramaDataHora {
 		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
 		DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
 		
+		System.out.println("d04 " + d04);
 		System.out.println("d04 " + d04.format(fmt1));
 		System.out.println("d04 " + fmt1.format(d04));
 		System.out.println("d04 " + d04.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
