@@ -11,11 +11,11 @@ public class ProgramaDataHora {
 	public static void main(String[] args) {
 		
 		LocalDate d04 = LocalDate.parse("2022-07-20");
-		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
+		LocalDateTime d05 = LocalDateTime.now();
 		Instant d06 = Instant.parse("2022-07-20T01:30:26Z");
 
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 		DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
 		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
 		DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;

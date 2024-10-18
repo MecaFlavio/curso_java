@@ -53,7 +53,7 @@ public class DataHora {
 		
 		// Texto ISO 8601 com instant (Padrão UTC)
 		Instant d06 = Instant.parse("2022-07-20T14:21:26Z");
-		System.out.println("d05 " + d06);
+		System.out.println("d06 " + d06);
 	
 		// Texto ISO 8601 com time zone diferente do GMT
 		Instant d07 = Instant.parse("2022-07-20T14:21:26-03:00");
