@@ -18,7 +18,7 @@ public class Program {
 //			SSS
 //		Sintaxe:
 //			class A extends B
-		
+
 //      Upcasting
 //		Casting de subclasse para superclasse
 //		Uso comum: Polimorfismo
@@ -27,43 +27,57 @@ public class Program {
 //		Casting da superclasse para subclasse
 //		Palavra instanceof
 //		Uso comum> métodos que recebem parâmetros genéricos (ex:Equals)
-		
-		Account acc = new Account(1001, "Alex", 0.0);
-		
+
+		Account acc = new Account(1001, "Alex", 1000.0);
+
+		Account acc0 = new SavingsAccount(1005, "Alana", 1000.0, 0.01);
+
 		BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
-		
-		//UPCASTING
-		
+
+		// UPCASTING
+
 		Account acc1 = bacc;
-		
-		Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
-		
+
+		Account acc2 = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
+
 		Account acc3 = new SavingsAccount(1004, "Ana", 0.0, 0.01);
-		
-		
-		//DOWNCASTING
-		
+
+		Account acc6 = new BusinessAccount(1006, "Maria", 1000.0, 500.0);
+
+		// DOWNCASTING
+
 		// casting manual
-		BusinessAccount acc4 = (BusinessAccount)acc2;
+		BusinessAccount acc4 = (BusinessAccount) acc2;
 		acc4.loan(100.0);
-		
-		// BusinessAccount acc5 = (BusinessAccount)acc3; - esta operação não é permitida pois acc3 não é BusinessAccount
-		
+
+		// BusinessAccount acc5 = (BusinessAccount)acc3; - esta operação não é permitida
+		// pois acc3 não é BusinessAccount
+
 		// pode ser testado com instanceof
 		if (acc3 instanceof BusinessAccount) {
-			BusinessAccount acc5 = (BusinessAccount)acc3;
+			BusinessAccount acc5 = (BusinessAccount) acc3;
 			acc5.loan(200.0);
 			System.out.println("Loan");
-		
+
 		}
-		
+
 		if (acc3 instanceof SavingsAccount) {
-			SavingsAccount acc5 = (SavingsAccount)acc3;
+			SavingsAccount acc5 = (SavingsAccount) acc3;
 			acc5.updateBalance();
 			System.out.println("update");
 		}
-		
-		
+
+		acc.withdraw(200);
+
+		System.out.println(acc.getBalance());
+
+		acc0.withdraw(200);
+		System.out.println(acc0.getBalance());
+
+		System.out.println(acc2.getBalance());
+
+		acc6.withdraw(200.0);
+		System.out.println(acc6.getBalance());
 	}
 
 }
