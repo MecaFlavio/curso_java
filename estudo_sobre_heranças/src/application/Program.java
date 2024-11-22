@@ -54,6 +54,7 @@ public class Program {
 		// pois acc3 não é BusinessAccount
 
 		// pode ser testado com instanceof
+		
 		if (acc3 instanceof BusinessAccount) {
 			BusinessAccount acc5 = (BusinessAccount) acc3;
 			acc5.loan(200.0);
@@ -78,6 +79,18 @@ public class Program {
 
 		acc6.withdraw(200.0);
 		System.out.println(acc6.getBalance());
+		
+		// AULA DE INTRODUÇÃO AO POLIMORFISMO
+		
+		Account x = new Account(1200, "Alex", 1000.0);
+		Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+		
+		x.withdraw(50.0);
+		y.withdraw(50.0);
+		
+		System.out.println(x.getBalance());
+		System.out.println(y.getBalance());
+		
 	}
 
 }
