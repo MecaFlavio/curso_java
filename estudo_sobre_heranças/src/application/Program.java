@@ -33,7 +33,7 @@ public class Program {
 		Account acc0 = new SavingsAccount(1005, "Alana", 1000.0, 0.01);
 
 		BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
-
+		
 		// UPCASTING
 
 		Account acc1 = bacc;
