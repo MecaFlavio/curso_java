@@ -1,0 +1,26 @@
+
+
+- Classes Abstratas são classe que não podem ser instanciadas
+
+- É uma forma de garantir herança total: Somente subclasses não abstratas podem ser instanciadas, mas nunca uma super classe abstrata.
+ 
+- Para garantir que uma classe seja abstrata basta acrecentar a frase "abstract class" como tipo antes do nome da classe.
+
+- notação na UML o nome fica em itálico
+
+Beneficios:
+
+Reuso: com a classe abstrata voce pode usar metodos e atributos da super classe
+
+Polimorfismo: A super classe generica permite tratar de forma facil e uniforme todas as subclasses
+
+Metodos que não possuem implementação
+
+	metodos precisam ser abstratos quando a classe é generica demais para conter sua implementação
+	
+	se uma classe possuir pelo menos um metodo abstrato, então esta classe tmabém é abstrata
+	
+	notação em UML: Itálico
+	
+	Exercicio resolvido
+	
